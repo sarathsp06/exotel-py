@@ -9,7 +9,7 @@ setup(
 
     # Application author details:
     author="sarath",
-    author_email="sarath@exotel.in",
+    author_email="sarath.sp06@gmail.com",
 
     # Packages
     packages=['exotel'],
@@ -21,8 +21,8 @@ setup(
     url="http://pypi.python.org/pypi/exotel_py_v010/",
 
     #
-    # license="LICENSE.txt",
-    description="Useful towel-related stuff.",
+    license="LICENSE.txt",
+    description="Python SDK for Exotel API",
 
     # long_description=open("README.txt").read(),
 
