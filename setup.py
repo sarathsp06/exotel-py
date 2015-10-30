@@ -5,7 +5,7 @@ setup(
     name="exotel",
 
     # Version number (initial):
-    version="0.1.0",
+    version="0.1.1",
 
     # Application author details:
     author="sarath",
@@ -18,13 +18,12 @@ setup(
     include_package_data=True,
 
     # Details
-    url="http://pypi.python.org/pypi/exotel_py_v010/",
-
+    url="https://github.com/sarathsp06/exotel-py",
+    download_url = 'https://github.com/sarathsp06/exotel-py/archive/0.1.0.tar.gz'
     #
     license="LICENSE.txt",
     description="Python SDK for Exotel API",
-
-    # long_description=open("README.txt").read(),
+    long_description=open("README.rst").read(),
 
     # Dependent packages (distributions)
     install_requires=[
