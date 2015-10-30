@@ -54,3 +54,9 @@ class Exotel:
             'TimeOut' : timeout,
             'CustomField' : custom_data
         })
+
+    def call_details(self, call_sid):
+      """
+       call_details - returns call details object as a response object
+      """
+      return requests.get(self.baseurl + '/Calls/{}.json'.format(call_sid), auth=(self.sid, self.token))
