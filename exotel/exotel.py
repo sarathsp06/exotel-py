@@ -60,3 +60,9 @@ class Exotel:
        call_details - returns call details object as a response object
       """
       return requests.get(self.baseurl + '/Calls/{}.json'.format(call_sid), auth=(self.sid, self.token))
+
+    def sms_details(self, sms_sid):
+      """
+       sms_details - returns sms details object as a response object provided the sms sid
+      """
+      return requests.get(self.baseurl + '/Sms/Messages/{}.json'.format(sms_sid), auth=(self.sid, self.token))
