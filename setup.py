@@ -19,7 +19,7 @@ setup(
 
     # Details
     url="https://github.com/sarathsp06/exotel-py",
-    download_url = 'https://github.com/sarathsp06/exotel-py/archive/0.1.0.tar.gz'
+    download_url = 'https://github.com/sarathsp06/exotel-py/archive/v0.1.1.tar.gz'
     #
     license="LICENSE.txt",
     description="Python SDK for Exotel API",
