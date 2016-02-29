@@ -1,6 +1,4 @@
-##exotel-py
-
-[![Join the chat at https://gitter.im/sarathsp06/exotel-py](https://badges.gitter.im/sarathsp06/exotel-py.svg)](https://gitter.im/sarathsp06/exotel-py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+##exotel-py [![Join the chat at https://gitter.im/sarathsp06/exotel-py](https://badges.gitter.im/sarathsp06/exotel-py.svg)](https://gitter.im/sarathsp06/exotel-py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Python module for exotels call and sms api's
 
 ###installation
