@@ -23,7 +23,7 @@ class Exotel:
                 'StatusCallback' : status_callback
              })
 
-    def call_flow(self,from_number,caller_id,flow_id,timelimit = 14400,timeout = 30,custom_data = None):
+    def call_flow(self,from_number,caller_id,flow_id,timelimit = 14400,timeout = 30,status_callback=None,custom_data = None):
        """
        call_flow -creates a call to from_number and flow_id with the exophone(caller_id)
        """
@@ -36,10 +36,12 @@ class Exotel:
             'TimeLimit': timelimit,
             'CallType': "trans",
             'TimeOut' : timeout,
+            'StatusCallback' : status_callback,
             'CustomField' : custom_data
+
         })
 
-    def call_number(self, from_number, caller_id, to,timelimit = 14400,timeout = 30,custom_data = None):
+    def call_number(self, from_number, caller_id, to,timelimit = 14400,timeout = 30,status_callback=None,custom_data = None):
        """
        call_number -creates a call to from_number and then to with the exophone(caller_id)
        """
@@ -52,7 +54,8 @@ class Exotel:
             'TimeLimit': timelimit,
             'CallType': "trans",
             'TimeOut' : timeout,
-            'CustomField' : custom_data
+            'CustomField' : custom_data,
+            'StatusCallback' : status_callback
         })
 
     def call_details(self, call_sid):
