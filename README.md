@@ -1,12 +1,15 @@
-##exotel-py [![Join the chat at https://gitter.im/sarathsp06/exotel-py](https://badges.gitter.im/sarathsp06/exotel-py.svg)](https://gitter.im/sarathsp06/exotel-py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-Python module for exotels call and sms api's
+# exotel-py #
 
-###installation
+[![Join the chat at https://gitter.im/sarathsp06/exotel-py](https://badges.gitter.im/sarathsp06/exotel-py.svg)](https://gitter.im/sarathsp06/exotel-py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Python module for exotels call and sms api's(Unofficial). 
+
+### installation ###
 `
 pip install exotel
 `
 
-##Usage
+## Usage ##
  - Initialize
 
    ```
@@ -44,9 +47,9 @@ pip install exotel
    ```
 
 
-##Authors and Contributors
+## Authors and Contributors ##
 
 In 2015, Sarath S Pllai ([@sarath_sp06](https://twitter.com/sarath_sp06)) started .Any bug reports would be addressed .Feel free to add more functions and send me the patch with updated README 
 
-##Support or Contact
+## Support or Contact ##
 Having trouble using the library contact me at sarath.sp06@gmail.com
