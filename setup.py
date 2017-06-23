@@ -19,6 +19,10 @@ setup(
     download_url = 'https://github.com/sarathsp06/exotel-py/archive/v0.1.4.tar.gz',
     license="LICENSE.txt",
     description="Python SDK for Exotel API[Unofficial]",
+    classifiers=(
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        ),
     long_description="""
    exotel-py
 ---------
