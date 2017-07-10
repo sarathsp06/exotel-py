@@ -1,4 +1,6 @@
 *~
+/exotel.egg-info/
+/venv/
 build/
 dist/
 *.pyc
