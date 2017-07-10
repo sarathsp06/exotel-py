@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = exotel/
+
+[paths]
+source =
+  .tox/*/lib/*/site-packages/

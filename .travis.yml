@@ -1,8 +1,6 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
   - "3.3"
   - "3.4"
   - "3.5"
@@ -13,4 +11,8 @@ python:
   - "nightly" # currently points to 3.7-dev
 # command to install dependencies
 install: "pip install -r requirements.txt"
-script: pytest
+script:
+  # TODO: use `tox-travis` to re-use build steps from `tox.ini`.
+  - "python setup.py install"
+  - "coverage run -m pytest -s -vv tests/"
+  - "coverage report --fail-under=100"

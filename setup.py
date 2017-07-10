@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     # Application name:
@@ -12,7 +12,7 @@ setup(
     author_email="sarath.sp06@gmail.com",
 
     # Packages
-    packages=['exotel'],
+    packages=find_packages(),
 
     # Details
     url="https://github.com/sarathsp06/exotel-py",
@@ -20,7 +20,7 @@ setup(
     license="LICENSE.txt",
     description="Python SDK for Exotel API[Unofficial]",
     long_description="""
-   exotel-py
+exotel-py
 ---------
 
 Python module for exotels call and sms api's
@@ -59,5 +59,5 @@ Usage
 
     ``client.call_details('call_sid')``
 
-    """
+"""
 )

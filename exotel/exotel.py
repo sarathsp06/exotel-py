@@ -1,18 +1,23 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+
 import datetime
 import requests
+
+from ._compat import urljoin
+
+
 class Exotel:
-    def __init__(self,sid,token):
+    def __init__(self,sid,token, baseurl='https://twilix.exotel.in/'):
         self.sid =  sid
         self.token = token
-        self.baseurl = 'https://twilix.exotel.in/v1/Accounts/{sid}'.format(sid=sid)
+        self.baseurl = urljoin(baseurl, 'v1/Accounts/{sid}/'.format(sid=sid))
 
     def sms(self, from_number, to, body,encoding_type = "plain", priority = "normal", status_callback = None ):
         """
         sms - sends sms using exotel api
         """
-        return requests.post(self.baseurl + '/Sms/send.json',
+        return requests.post(urljoin(self.baseurl, 'Sms/send.json'),
             auth = (self.sid, self.token),
             data = {
                 'From': from_number,
@@ -27,7 +32,7 @@ class Exotel:
        """
        call_flow -creates a call to from_number and flow_id with the exophone(caller_id)
        """
-       return requests.post(self.baseurl + '/Calls/connect.json',
+       return requests.post(urljoin(self.baseurl, 'Calls/connect.json'),
         auth=(self.sid, self.token),
         data={
             'From': from_number,
@@ -45,7 +50,7 @@ class Exotel:
        """
        call_number -creates a call to from_number and then to with the exophone(caller_id)
        """
-       return requests.post(self.baseurl + '/Calls/connect.json',
+       return requests.post(urljoin(self.baseurl, 'Calls/connect.json'),
         auth=(self.sid, self.token),
         data={
             'From': from_number,
@@ -62,10 +67,10 @@ class Exotel:
       """
        call_details - returns call details object as a response object
       """
-      return requests.get(self.baseurl + '/Calls/{}.json'.format(call_sid), auth=(self.sid, self.token))
+      return requests.get(urljoin(self.baseurl, 'Calls/{}.json'.format(call_sid)), auth=(self.sid, self.token))
 
     def sms_details(self, sms_sid):
       """
        sms_details - returns sms details object as a response object provided the sms sid
       """
-      return requests.get(self.baseurl + '/Sms/Messages/{}.json'.format(sms_sid), auth=(self.sid, self.token))
+      return requests.get(urljoin(self.baseurl, 'Sms/Messages/{}.json'.format(sms_sid)), auth=(self.sid, self.token))
