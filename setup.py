@@ -20,7 +20,7 @@ setup(
     license="LICENSE.txt",
     description="Python SDK for Exotel API[Unofficial]",
     long_description="""
-   exotel-py
+exotel-py
 ---------
 
 Python module for exotels call and sms api's
@@ -59,5 +59,5 @@ Usage
 
     ``client.call_details('call_sid')``
 
-    """
+"""
 )

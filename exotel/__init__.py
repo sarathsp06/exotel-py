@@ -1,1 +1,1 @@
-from  exotel import Exotel
+from .exotel import Exotel

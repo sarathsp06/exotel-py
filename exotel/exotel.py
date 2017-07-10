@@ -1,10 +1,11 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 
 import datetime
 import requests
 
-from urlparse import urljoin
+from ._compat import urljoin
+
 
 class Exotel:
     def __init__(self,sid,token, baseurl='https://twilix.exotel.in/'):
