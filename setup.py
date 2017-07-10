@@ -5,7 +5,7 @@ setup(
     name="exotel",
 
     # Version number (initial):
-    version="0.1.4",
+    version="0.1.5",
 
     # Application author details:
     author="sarath",
@@ -16,7 +16,7 @@ setup(
 
     # Details
     url="https://github.com/sarathsp06/exotel-py",
-    download_url = 'https://github.com/sarathsp06/exotel-py/archive/v0.1.4.tar.gz',
+    download_url = 'https://github.com/sarathsp06/exotel-py/archive/v0.1.5.tar.gz',
     license="LICENSE.txt",
     description="Python SDK for Exotel API[Unofficial]",
     long_description="""
