@@ -51,5 +51,9 @@ pip install exotel
 
 In 2015, Sarath S Pllai ([@sarath_sp06](https://twitter.com/sarath_sp06)) started .Any bug reports would be addressed .Feel free to add more functions and send me the patch with updated README 
 
+## Stargazers over time
+
+[![Stargazers over time](https://starcharts.herokuapp.com/sarathsp06/exotel-py.svg)](https://starcharts.herokuapp.com/sarathsp06/exotel-py)
+      
 ## Support or Contact ##
 Having trouble using the library contact me at sarath.sp06@gmail.com
